@@ -1,0 +1,16 @@
+{
+  "name": "tareasem2",
+  "version": "0.0.1",
+  "description": "Proyecto CRUD que manejara un archivo Json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "keywords": [
+    "CRUD",
+    "tarea2"
+  ],
+  "author": "Levi Castro",
+  "license": "ISC"
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "actividad": "tarea1",
+        "categoria": "puntos acumulatiuvos",
+        "valor": 5,
+        "disponible": true
+    },
+    {
+        "actividad": "tarea2",
+        "categoria": "puntos acumulatiuvos",
+        "valor": 3,
+        "disponible": false
+    },
+    {
+        "actividad": "examen1",
+        "categoria": "puntos examenes",
+        "valor": 20,
+        "disponible": true
+    }
+]
