@@ -1,19 +1,19 @@
 [
     {
         "actividad": "tarea1",
-        "categoria": "puntos acumulatiuvos",
+        "categoria": "puntos acumulativos",
         "valor": 5,
         "disponible": true
     },
     {
         "actividad": "tarea2",
-        "categoria": "puntos acumulatiuvos",
+        "categoria": "puntos acumulativos",
         "valor": 3,
         "disponible": false
     },
     {
         "actividad": "examen1",
-        "categoria": "puntos examenes",
+        "categoria": "puntos Examenes",
         "valor": 20,
         "disponible": true
     }

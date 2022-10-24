@@ -1,13 +1,14 @@
 const FS= require('fs')
 const RUTA='./data.json'
 
-const [,,parametro1,parametro2]=process.argv
+const [,,parametro1,parametro2,parametro3]=process.argv
 const [,accion] = parametro1.split('=')
 if(parametro2) {
     var [,msj] = parametro2.split('=')
 }
+const [,objeto] = parametro3.split('=')
 
-//let data={};
+let data={};
 
 switch(accion){
     case '1':
@@ -25,6 +26,9 @@ switch(accion){
     case '5':
         leerJSON()
         break
+    case '6':
+        leerobjeto()
+        break    
     default:
         console.log('Opcion incorrecta')
         break
@@ -65,7 +69,14 @@ function leerJSON(){
         console.log(JSON.parse(data))
         
         this.data=JSON.parse(data)
-
-        //console.log(`Esto es un objeto: ${this.data,actividad}`)
       });
 }
+
+function leerobjeto(){
+    let data2= FS.readFile(RUTA, function(err, data) {
+         if (err) throw err;
+ 
+         this.data=JSON.parse(data)
+         console.log(`Este objeto es: ${this.data[msj][objeto]}`)
+       });
+ }
